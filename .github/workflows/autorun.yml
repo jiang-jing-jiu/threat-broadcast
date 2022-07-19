@@ -7,7 +7,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '0 * * * *'
 
 
 jobs:
@@ -48,7 +48,7 @@ jobs:
           username: ${{ secrets.MAIL_USER }}
           password: ${{ secrets.MAIL_PASS }}
           from: ${{ secrets.MAIL_USER }}
-          to: jingjiujiang@qq.com
+          to: ${{ secrets.MAIL_RECV }}
           body: file://cache/mail_content.dat
           content_type: text/html
           subject: 威胁情报播报

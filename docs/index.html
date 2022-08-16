@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-08-16 05:23:39 -->
+<!-- RELEASE TIME : 2022-08-16 06:29:32 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>5fc1b77d4b5cb5090d8dfaa50611dff3</td>
+       <td>CVE-2022-38216</td>
+       <td>2022-08-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>An integer overflow exists in Mapbox's closed source gl-native library prior to version 10.6.1, which is bundled with multiple Mapbox products including open source libraries. The overflow is caused by large image height and width values when creating a new Image and allows for out of bounds writes, potentially crashing the Mapbox process.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38216">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>074abc22766eb3d3773fee779b00ec1c</td>
+       <td>CVE-2022-36312</td>
+       <td>2022-08-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Airspan AirVelocity 1500 software version 15.18.00.2511 lacks CSRF protections in the eNodeB's web management UI. This issue may affect other AirVelocity and AirSpeed models.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36312">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>de47b4d45397ab84995a68ab033f9090</td>
+       <td>CVE-2022-36311</td>
+       <td>2022-08-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Airspan AirVelocity 1500 prior to software version 15.18.00.2511 is vulnerable to injection leading to XSS in the SNMP community field in the eNodeB's web management UI. This issue may affect other AirVelocity and AirSpeed models.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36311">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fac32a8403a09de516397dc13cb0f86d</td>
+       <td>CVE-2022-36310</td>
+       <td>2022-08-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Airspan AirVelocity 1500 software prior to version 15.18.00.2511 had NET-SNMP-EXTEND-MIB enabled on its snmpd service, enabling an attacker with SNMP write abilities to execute commands as root on the eNodeB. This issue may affect other AirVelocity and AirSpeed models.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36310">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8c121c79a53d992c923a8e5b6f038fe2</td>
+       <td>CVE-2022-36309</td>
+       <td>2022-08-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Airspan AirVelocity 1500 software versions prior to 15.18.00.2511 have a root command injection vulnerability in the ActiveBank parameter of the recoverySubmit.cgi script running on the eNodeB's web management UI. This issue may affect other AirVelocity and AirSpeed models.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36309">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1a9e2daa26545bef0d0110293a557413</td>
+       <td>CVE-2022-36308</td>
+       <td>2022-08-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Airspan AirVelocity 1500 web management UI displays SNMP credentials in plaintext on software versions older than 15.18.00.2511, and stores SNMPv3 credentials unhashed on the filesystem, enabling anyone with web access to use these credentials to manipulate the eNodeB over SNMP. This issue may affect other AirVelocity and AirSpeed models.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36308">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ad149714c005886db9934a4dec5cb3c7</td>
+       <td>CVE-2022-36307</td>
+       <td>2022-08-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>The AirVelocity 1500 prints SNMP credentials on its physically accessible serial port during boot. This was fixed in AirVelocity 1500 software version 15.18.00.2511 and may affect other AirVelocity and AirSpeed models.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36307">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c527f6fde13ceec0f86203daae8f5003</td>
+       <td>CVE-2022-36306</td>
+       <td>2022-08-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>An authenticated attacker can enumerate and download sensitive files, including the eNodeB's web management UI's TLS private key, the web server binary, and the web server configuration file. These vulnerabilities were found in AirVelocity 1500 running software version 9.3.0.01249, were still present in 15.18.00.2511, and may affect other AirVelocity and AirSpeed models.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36306">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>589086cc8ec100261d668d619bb41ad9</td>
+       <td>CVE-2022-24952</td>
+       <td>2022-08-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Several denial of service vulnerabilities exist in Eternal Terminal prior to version 6.2.0, including a DoS triggered remotely by an invalid sequence number and a local bug triggered by invalid input sent directly to the IPC socket.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24952">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f677c60750b0b71fde3ed5bfc9c1a473</td>
+       <td>CVE-2022-24951</td>
+       <td>2022-08-16 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>A race condition exists in Eternal Terminal prior to version 6.2.0 which allows a local attacker to hijack Eternal Terminal's IPC socket, enabling access to Eternal Terminal clients which attempt to connect in the future.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24951">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c12d7cdf492341240537dc9390c120af</td>
        <td>CVE-2022-38359</td>
        <td>2022-08-15 23:15:00 <img src="imgs/new.gif" /></td>
@@ -441,86 +521,6 @@
        <td>2022-08-06 18:15:00</td>
        <td>A vulnerability was found in SourceCodester Expense Management System. It has been rated as critical. This issue affects the function fetch_report_credit of the file report.php of the component POST Parameter Handler. The manipulation of the argument from/to leads to sql injection. The attack may be initiated remotely. The associated identifier of this vulnerability is VDB-205811.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2688">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f9afa3cb871e79faf06d3002eab74297</td>
-       <td>CVE-2022-2687</td>
-       <td>2022-08-06 07:15:00</td>
-       <td>A vulnerability, which was classified as critical, was found in SourceCodester Gym Management System. Affected is an unknown function. The manipulation of the argument user_pass leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-205734 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2687">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5c71d1c12d52e9caaf57e7a08c5ae40c</td>
-       <td>CVE-2022-2686</td>
-       <td>2022-08-06 07:15:00</td>
-       <td>A vulnerability, which was classified as problematic, was found in oretnom23 Fast Food Ordering System. This affects an unknown part of the component Menu List Page. The manipulation of the argument Description leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-205725 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2686">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>419002b03a0b2c4dd2412d8570e4bed4</td>
-       <td>CVE-2022-32543</td>
-       <td>2022-08-05 22:15:00</td>
-       <td>An integer overflow vulnerability exists in the way ESTsoft Alyac 2.5.8.544 parses OLE files. A specially-crafted OLE file can lead to a heap buffer overflow which can result in arbitrary code execution. An attacker can provide a malicious file to trigger this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32543">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4e9b7a91e9cdf88217efabaf1de166c9</td>
-       <td>CVE-2022-29886</td>
-       <td>2022-08-05 22:15:00</td>
-       <td>An integer overflow vulnerability exists in the way ESTsoft Alyac 2.5.8.544 parses OLE files. A specially-crafted OLE file can lead to a heap buffer overflow, which can result in arbitrary code execution. An attacker can provide a malicious file to trigger this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29886">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a5a9b35720ffe179a553ac1c291778bc</td>
-       <td>CVE-2022-29465</td>
-       <td>2022-08-05 22:15:00</td>
-       <td>An out-of-bounds write vulnerability exists in the PSD Header processing memory allocation functionality of Accusoft ImageGear 20.0. A specially-crafted malformed file can lead to memory corruption. An attacker can provide a malicious file to trigger this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29465">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>275086dda3c6d425f4cb3478a8be37d2</td>
-       <td>CVE-2022-28665</td>
-       <td>2022-08-05 22:15:00</td>
-       <td>A memory corruption vulnerability exists in the httpd unescape functionality of FreshTomato 2022.1. A specially-crafted HTTP request can lead to memory corruption. An attacker can send a network request to trigger this vulnerability.The `freshtomato-arm` has a vulnerable URL-decoding feature that can lead to memory corruption.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28665">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>999b3fdbd2fc64bfa04e5c7d827aa2fc</td>
-       <td>CVE-2022-28664</td>
-       <td>2022-08-05 22:15:00</td>
-       <td>A memory corruption vulnerability exists in the httpd unescape functionality of FreshTomato 2022.1. A specially-crafted HTTP request can lead to memory corruption. An attacker can send a network request to trigger this vulnerability.The `freshtomato-mips` has a vulnerable URL-decoding feature that can lead to memory corruption.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28664">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>60c2913a2b7dd818487b047df8c55902</td>
-       <td>CVE-2022-27660</td>
-       <td>2022-08-05 22:15:00</td>
-       <td>A denial of service vulnerability exists in the confctl_set_guest_wlan functionality of TCL LinkHub Mesh Wi-Fi MS1G_00_01.00_14. A specially-crafted network packet can lead to denial of service. An attacker can send packets to trigger this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27660">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d52f5ddf6cf4cfe2557b9178aca21bb9</td>
-       <td>CVE-2022-27633</td>
-       <td>2022-08-05 22:15:00</td>
-       <td>An information disclosure vulnerability exists in the confctl_get_guest_wlan functionality of TCL LinkHub Mesh Wifi MS1G_00_01.00_14. A specially-crafted network packet can lead to information disclosure. An attacker can send packets to trigger this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27633">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>671d4dc58603d3a26ba930c6a47b0fbc</td>
-       <td>CVE-2022-27631</td>
-       <td>2022-08-05 22:15:00</td>
-       <td>A memory corruption vulnerability exists in the httpd unescape functionality of DD-WRT Revision 32270 - Revision 48599. A specially-crafted HTTP request can lead to memory corruption. An attacker can send a network request to trigger this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27631">详情</a></td>
       </tr>
 
      </tbody>

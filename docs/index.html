@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-08-16 04:46:45 -->
+<!-- RELEASE TIME : 2022-08-16 05:23:39 -->
 <html lang="zh-cn">
 
  <head>
@@ -2188,6 +2188,46 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>c412e1338beb843d01082770e023abed</td>
+       <td>CVE-2022-38155</td>
+       <td>2022-08-11 01:15:10 </td>
+       <td>TEE_Malloc in Samsung mTower through 0.3.0 allows a trusted application to achieve Excessive Memory Allocation via a large len value, as demonstrated by a Numaker-PFM-M2351 TEE kernel crash.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38155">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7e7afe014958f13d6834967cd6b90a75</td>
+       <td>CVE-2022-38150</td>
+       <td>2022-08-11 01:15:10 </td>
+       <td>In Varnish Cache 7.0.0, 7.0.1, 7.0.2, and 7.1.0, it is possible to cause the Varnish Server to assert and automatically restart through forged HTTP/1 backend responses. An attack uses a crafted reason phrase of the backend response status line. This is fixed in 7.0.3 and 7.1.1.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38150">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f6f5ce747b60b7c81668123b7d91814b</td>
+       <td>CVE-2022-38130</td>
+       <td>2022-08-10 20:16:06 </td>
+       <td>The com.keysight.tentacle.config.ResourceManager.smsRestoreDatabaseZip() method is used to restore the HSQLDB database used in SMS. It takes the path of the zipped database file as the single parameter. An unauthenticated, remote attacker can specify an UNC path for the database file (i.e., \\&lt;attacker-host&gt;\sms\&lt;attacker-db.zip&gt;), effectively controlling the content of the database to be restored.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38130">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b7cab91f03b3ad0f8c3f8cc07e347857</td>
+       <td>CVE-2022-38129</td>
+       <td>2022-08-10 20:16:06 </td>
+       <td>A path traversal vulnerability exists in the com.keysight.tentacle.licensing.LicenseManager.addLicenseFile() method in the Keysight Sensor Management Server (SMS). This allows an unauthenticated remote attacker to upload arbitrary files to the SMS host.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38129">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9760c133c429b6f5793f791cf9d5470d</td>
+       <td>CVE-2022-38133</td>
+       <td>2022-08-10 16:15:08 </td>
+       <td>In JetBrains TeamCity before 2022.04.3 the private SSH key could be written to the server log in some cases</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38133">详情</a></td>
+      </tr>
+
+      <tr>
        <td>6b4239aa5bd01e242a84274844880439</td>
        <td>CVE-2022-34706</td>
        <td>2022-08-09 20:15:11 </td>
@@ -2268,6 +2308,46 @@
       </tr>
 
       <tr>
+       <td>bca4c08909cc60301bec96421f6d2f00</td>
+       <td>CVE-2022-37452</td>
+       <td>2022-08-07 18:15:08 </td>
+       <td>Exim before 4.95 has a heap-based buffer overflow for the alias list in host_name_lookup in host.c when sender_host_name is set.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37452">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>66a1b02edd3be25471c4bb3f8bc61d2b</td>
+       <td>CVE-2022-37450</td>
+       <td>2022-08-05 21:15:09 </td>
+       <td>Go Ethereum (aka geth) through 1.10.21 allows attackers to increase rewards by mining blocks in certain situations, and using a manipulation of time-difference values to achieve replacement of main-chain blocks, aka Riskless Uncle Making (RUM), as exploited in the wild in 2020 through 2022.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37450">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1e8dd004bc999e92da0fd975da8b1fe6</td>
+       <td>CVE-2022-37434</td>
+       <td>2022-08-05 07:15:07 </td>
+       <td>zlib through 1.2.12 has a heap-based buffer over-read or buffer overflow in inflate in inflate.c via a large gzip header extra field. NOTE: only applications that call inflateGetHeader are affected. Some common applications bundle the affected zlib source code but may be unable to call inflateGetHeader (e.g., see the nodejs/node reference).</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37434">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>76ca676dc22d5cd96faabd08dc99e3f6</td>
+       <td>CVE-2022-37416</td>
+       <td>2022-08-05 06:15:08 </td>
+       <td>Ittiam libmpeg2 before 2022-07-27 uses memcpy with overlapping memory blocks in impeg2_mc_fullx_fully_8x8.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37416">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6f7c863b6ef7843945acd8809d123a81</td>
+       <td>CVE-2022-37415</td>
+       <td>2022-08-05 04:15:09 </td>
+       <td>The Uniwill SparkIO.sys driver 1.0 is vulnerable to a stack-based buffer overflow via IOCTL 0x40002008.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37415">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c201a567604a3dcd535e68c8ee706414</td>
        <td>CVE-2022-2631</td>
        <td>2022-08-02 17:15:10 </td>
@@ -2345,86 +2425,6 @@
        <td>2022-08-02 03:15:09 </td>
        <td>Pharmacy Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at editbrand.php.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-34948">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1fcaff67c1f80cd70cbeab5c326815da</td>
-       <td>CVE-2022-37315</td>
-       <td>2022-08-01 22:15:10 </td>
-       <td>graphql-go (aka GraphQL for Go) through 0.8.0 has infinite recursion in the type definition parser.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37315">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ddc57c01d4070a641b348e47a9b80e91</td>
-       <td>CVE-2022-31148</td>
-       <td>2022-08-01 17:15:08 </td>
-       <td>Shopware is an open source e-commerce software. In versions from 5.7.0 a persistent cross site scripting (XSS) vulnerability exists in the customer module. Users are recommend to update to the current version 5.7.14. You can get the update to 5.7.14 regularly via the Auto-Updater or directly via the download overview. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31148">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>96298b1962d20099abea105aa4bce272</td>
-       <td>CVE-2022-26445</td>
-       <td>2022-08-01 14:15:09 </td>
-       <td>In wifi driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: GN20220420088; Issue ID: GN20220420088.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26445">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>200150436bb44406083edfaae8304e2d</td>
-       <td>CVE-2022-26444</td>
-       <td>2022-08-01 14:15:09 </td>
-       <td>In wifi driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: GN20220420075; Issue ID: GN20220420075.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26444">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>17e5972ebe9cbbc57e43e41b038c70a7</td>
-       <td>CVE-2022-26443</td>
-       <td>2022-08-01 14:15:09 </td>
-       <td>In wifi driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: GN20220420068; Issue ID: GN20220420068.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26443">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4e8a0d54c16b7ca0595c5f773dc8d1f1</td>
-       <td>CVE-2022-26442</td>
-       <td>2022-08-01 14:15:09 </td>
-       <td>In wifi driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: GN20220420051; Issue ID: GN20220420051.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26442">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9088fcc0d265f8142f4a95aa8213c5bc</td>
-       <td>CVE-2022-26441</td>
-       <td>2022-08-01 14:15:09 </td>
-       <td>In wifi driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: GN20220420044; Issue ID: GN20220420044.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26441">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a6145cf1795158609fe0234fec91bd3f</td>
-       <td>CVE-2022-26440</td>
-       <td>2022-08-01 14:15:09 </td>
-       <td>In wifi driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: GN20220420037; Issue ID: GN20220420037.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26440">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8d6028df139787657874b1ca6b469e29</td>
-       <td>CVE-2022-26439</td>
-       <td>2022-08-01 14:15:09 </td>
-       <td>In wifi driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: GN20220420020; Issue ID: GN20220420020.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26439">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a81f592eaa9898c77e2fb471fe445f06</td>
-       <td>CVE-2022-26438</td>
-       <td>2022-08-01 14:15:09 </td>
-       <td>In wifi driver, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: GN20220420013; Issue ID: GN20220420013.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-26438">详情</a></td>
       </tr>
 
      </tbody>

@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-09-29 12:54:58 -->
+<!-- RELEASE TIME : 2022-09-29 14:34:33 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,54 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>7b5ccf142ebfddf87a99d589c1624db0</td>
+       <td>CVE-2022-40890</td>
+       <td>2022-09-29 13:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability in /src/amf/amf-context.c in Open5GS 2.4.10 and earlier leads to AMF denial of service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40890">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>38dc2c9f81a9bf115da31d487ee9ab53</td>
+       <td>CVE-2022-40363</td>
+       <td>2022-09-29 13:15:00 <img src="imgs/new.gif" /></td>
+       <td>A buffer overflow in the component nfc_device_load_mifare_ul_data of Flipper Devices Inc., Flipper Zero before v0.65.2 allows attackers to cause a Denial of Service (DoS) via a crafted NFC file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40363">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7ec2f030a0024d20f1f29f63259992e8</td>
+       <td>CVE-2022-39250</td>
+       <td>2022-09-29 13:15:00 <img src="imgs/new.gif" /></td>
+       <td>Matrix JavaScript SDK is the Matrix Client-Server software development kit (SDK) for JavaScript. Prior to version 19.7.0, an attacker cooperating with a malicious homeserver could interfere with the verification flow between two users, injecting its own cross-signing user identity in place of one of the usersâ€™ identities. This would lead to the other device trusting/verifying the user identity under the control of the homeserver instead of the intended one. The vulnerability is a bug in the matrix-js-sdk, caused by checking and signing user identities and devices in two separate steps, and inadequately fixing the keys to be signed between those steps. Even though the attack is partly made possible due to the design decision of treating cross-signing user identities as Matrix devices on the server side (with their device ID set to the public part of the user identity key), no other examined implementations were vulnerable. Starting with version 19.7.0, the matrix-js-sdk has been modified to double check that the key signed is the one that was verified instead of just referencing the key by ID. An additional check has been made to report an error when one of the device ID matches a cross-signing key. As this attack requires coordination between a malicious homeserver and an attacker, those who trust their homeservers do not need a particular workaround.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39250">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cc294e85874c1b539efc2ebfc0f154b7</td>
+       <td>CVE-2022-40475</td>
+       <td>2022-09-29 12:15:00 <img src="imgs/new.gif" /></td>
+       <td>TOTOLINK A860R V4.1.2cu.5182_B20201027 was discovered to contain a command injection via the component /cgi-bin/downloadFile.cgi.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40475">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e0aeb316b4452d85f68a55455cf5bbad</td>
+       <td>CVE-2022-40126</td>
+       <td>2022-09-29 12:15:00 <img src="imgs/new.gif" /></td>
+       <td>A misconfiguration in the Service Mode profile directory of Clash for Windows v0.19.9 allows attackers to escalate privileges and execute arbitrary commands when Service Mode is activated.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40126">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b6290a86f0107ae3ae9f7b7ab1728611</td>
+       <td>CVE-2022-3352</td>
+       <td>2022-09-29 12:15:00 <img src="imgs/new.gif" /></td>
+       <td>Use After Free in GitHub repository vim/vim prior to 9.0.0614.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3352">详情</a></td>
+      </tr>
+
+      <tr>
        <td>0edb9c16c8a3a9d1059c52d2770586ca</td>
        <td>CVE-2022-3355</td>
        <td>2022-09-29 10:15:00 <img src="imgs/new.gif" /></td>
@@ -473,54 +521,6 @@
        <td>2022-08-31 22:15:00</td>
        <td>D-link DIR-816 A2_v1.10CNB04.img is vulnerable to Command injection via /goform/NTPSyncWithHost.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37125">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>293ee23773e3dd9ee2e95ac42468f1b9</td>
-       <td>CVE-2022-36620</td>
-       <td>2022-08-31 21:15:00</td>
-       <td>D-link DIR-816 A2_v1.10CNB04.img is vulnerable to Buffer Overflow via /goform/addRouting.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36620">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d5bf208de92f3d8eca9f45e8b79f8b18</td>
-       <td>CVE-2022-36203</td>
-       <td>2022-08-31 21:15:00</td>
-       <td>Doctor's Appointment System 1.0 is vulnerable to Cross Site Scripting (XSS) via the admin panel. In addition, it leads to takeover the administrator account by stealing the cookie via XSS.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36203">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7ee6f738734d152d84b7e0306c24d81e</td>
-       <td>CVE-2022-36202</td>
-       <td>2022-08-31 21:15:00</td>
-       <td>Doctor's Appointment System1.0 is vulnerable to Incorrect Access Control via edoc/patient/settings.php. The settings.php is affected by Broken Access Control (IDOR) via id= parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36202">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3105d11806d07095631bfc8d2c673043</td>
-       <td>CVE-2022-36201</td>
-       <td>2022-08-31 21:15:00</td>
-       <td>Doctor's Appointment System 1.0 is vulnerable to SQL Injection via booking.php has ?id=.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36201">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b566b97a3a6152b76fdcf0701572cd5b</td>
-       <td>CVE-2022-2898</td>
-       <td>2022-08-31 21:15:00</td>
-       <td>Measuresoft ScadaPro Server and Client (All Versions) do not properly resolve links before file access; this could allow a denial-of-service condition.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2898">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>119f67b850c9183aa90d9ef74daec2d0</td>
-       <td>CVE-2022-2897</td>
-       <td>2022-08-31 21:15:00</td>
-       <td>Measuresoft ScadaPro Server and Client (All Versions) do not properly resolve links before file access; this could allow privilege escalation..</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2897">详情</a></td>
       </tr>
 
      </tbody>
@@ -1676,6 +1676,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d35527468d553dd78fb5ac9437c786c4</td>
+       <td>CVE-2022-3076</td>
+       <td>2022-09-29 20:31:36 <img src="imgs/new.gif" /></td>
+       <td>CMINDS CM_DOWNLOAD_MANAGER Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=127f680212134d06b90a789b0191bab4">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6c213ce866d39e0e32f8c7701c6b99de</td>
+       <td>CVE-2022-3039</td>
+       <td>2022-09-29 20:31:30 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c297c4070ca7464a9bd7b00e02372a98">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>56ba578fec6497c8805f3c590721995a</td>
+       <td>CVE-2022-3038</td>
+       <td>2022-09-29 20:31:26 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5301eded70b544059a264dde87d0243e">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c4674332b2adb07a62b0a223bbbbc72e</td>
+       <td>CVE-2022-3046</td>
+       <td>2022-09-29 20:31:21 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0048c02552bd4a4e8b1438c06c8d080a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c46aa9b8093c60061b45205a613c0be3</td>
+       <td>CVE-2022-3041</td>
+       <td>2022-09-29 20:31:15 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d1add6345bf544429b1aa02367308d9a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6aa557f45209fcc266d84d7b07738cd0</td>
+       <td>CVE-2022-38936</td>
+       <td>2022-09-29 20:31:10 <img src="imgs/new.gif" /></td>
+       <td>PBC_PROJECT PBC Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=35c057d6c6374cf3926b6c3b94f3555f">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a87d4b4f416f0e5813455c9979f495ec</td>
+       <td>CVE-2022-2785</td>
+       <td>2022-09-29 20:31:05 <img src="imgs/new.gif" /></td>
+       <td>LINUX LINUX_KERNEL Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c7d12e632b504b8d86b67583a5cf67e7">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>553e05bf652d9e28c9d5970a8618c212</td>
+       <td>CVE-2021-3782</td>
+       <td>2022-09-29 20:31:00 <img src="imgs/new.gif" /></td>
+       <td>Canonical Ubuntu 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3ce313ab6c8341d2a5e98de2512ba7d0">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bd297c4912edb8d10a3d8bbc851857ad</td>
+       <td>CVE-2022-40716</td>
+       <td>2022-09-29 20:30:55 <img src="imgs/new.gif" /></td>
+       <td>HASHICORP CONSUL Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9d179aaf5ad54c4f85166380ecd78ac5">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8a1b273090dd35d7255ef48eac77e21e</td>
+       <td>CVE-2022-2970</td>
+       <td>2022-09-29 20:30:50 <img src="imgs/new.gif" /></td>
+       <td>Mz Automation Libiec61850 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8ddd7708812d407892100b428d2ec2aa">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2c1045a1dcd7fc64ca9e84912c863f49</td>
        <td>CVE-2022-38703</td>
        <td>2022-09-28 20:28:38 <img src="imgs/new.gif" /></td>
@@ -1833,86 +1913,6 @@
        <td>2022-08-29 20:13:49</td>
        <td>libapreq2 授权问题漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=faea2c4a7b1f4f478015bc294b0ed84f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b0ab59cc15840a8f67d3d04ebbf6775e</td>
-       <td>CVE-2022-37162</td>
-       <td>2022-08-29 20:13:47</td>
-       <td>Claroline 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=96891013b22f4e1d8f137088e693fe7e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5dbeac32c38f9213341597dfbd93ad79</td>
-       <td>CVE-2022-37161</td>
-       <td>2022-08-29 20:13:40</td>
-       <td>Claroline 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f92df08f03624f598f3a3fa4ad616b0e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>93737f5297f4467c71816a0e6d8bd684</td>
-       <td>CVE-2020-27798</td>
-       <td>2022-08-29 20:13:37</td>
-       <td>UPX 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f63b90d6fdf046869af7697b6ed20449">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>60a7edb5bc08c29744d40c5f53de6d2b</td>
-       <td>CVE-2020-27797</td>
-       <td>2022-08-29 20:13:30</td>
-       <td>UPX 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e5e73d1a3e414140b53e7cf42512fa5d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5dc9184e077fdace11de11a1a3d0ae22</td>
-       <td>CVE-2020-27801</td>
-       <td>2022-08-29 20:13:28</td>
-       <td>UPX 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f3ea5067dffa46a8a71ceaa6f36a2753">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>88a3bd440e38ac37380002f7bd28fdba</td>
-       <td>CVE-2020-27800</td>
-       <td>2022-08-29 20:13:19</td>
-       <td>UPX 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c979e4922814480e9b986ea9f5641021">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e77b93270006b8edefd3550c47549c56</td>
-       <td>CVE-2022-2982</td>
-       <td>2022-08-29 20:13:15</td>
-       <td>Vim 资源管理错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3681d3409cce4bef9980c82b6552228b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>450882474380d99dbd65ce55f519a678</td>
-       <td>CVE-2022-2980</td>
-       <td>2022-08-29 20:13:09</td>
-       <td>vim 代码问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=15ea0afee80b4886b93c10e6d357f5ba">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2bf8a6e2d01eb166abad2e3a42c80653</td>
-       <td>CVE-2022-37112</td>
-       <td>2022-08-28 20:15:31</td>
-       <td>BlueCMS SQL注入漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=90589d0bba704cdca4a9bc2708b85ee5">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a34c430245be200b52fe5eda74a35a3e</td>
-       <td>CVE-2021-3764</td>
-       <td>2022-08-27 20:19:04</td>
-       <td>Linux kernel 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d82c4fe68cb8408fa0d73571cead72e9">详情</a></td>
       </tr>
 
      </tbody>

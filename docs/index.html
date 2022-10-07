@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-10-06 21:25:46 -->
+<!-- RELEASE TIME : 2022-10-07 02:32:39 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,6 +284,62 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>203029fc88be6a28949e01b46da0973b</td>
+       <td>CVE-2022-26238</td>
+       <td>2022-10-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>The default privileges for the running service Normand Service Manager in Beckman Coulter Remisol Advance v2.0.12.1 and prior allows non-privileged users to overwrite and manipulate executables and libraries. This allows attackers to access sensitive data.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26238">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>319cf1ad51b082494c5174c04a08b0f8</td>
+       <td>CVE-2022-26236</td>
+       <td>2022-10-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>The default privileges for the running service Normand Remisol Advance Launcher in Beckman Coulter Remisol Advance v2.0.12.1 and prior allows non-privileged users to overwrite and manipulate executables and libraries. This allows attackers to access sensitive data.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-26236">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e48595f37dbfcfe0f2b0206a2f03759b</td>
+       <td>CVE-2022-40494</td>
+       <td>2022-10-06 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>NPS before v0.26.10 was discovered to contain an authentication bypass vulnerability via constantly generating and sending the Auth key and Timestamp parameters.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40494">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ea648f230d03f29f840ff3d33b6d9ef4</td>
+       <td>CVE-2022-41355</td>
+       <td>2022-10-06 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Online Leave Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /leave_system/classes/Master.php?f=delete_department.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41355">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b9efa7eaf687dc0598f5d328df97a4a0</td>
+       <td>CVE-2022-39284</td>
+       <td>2022-10-06 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>CodeIgniter is a PHP full-stack web framework. In versions prior to 4.2.7 setting `$secure` or `$httponly` value to `true` in `Config\Cookie` is not reflected in `set_cookie()` or `Response::setCookie()`. As a result cookie values are erroneously exposed to scripts. It should be noted that this vulnerability does not affect session cookies. Users are advised to upgrade to v4.2.7 or later. Users unable to upgrade are advised to manually construct their cookies either by setting the options in code or by constructing Cookie objects. Examples of each workaround are available in the linked GHSA.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39284">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>56a413a86c4bc35239fb0ae6a53f99f2</td>
+       <td>CVE-2022-39279</td>
+       <td>2022-10-06 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>discourse-chat is a plugin for the Discourse message board which adds chat functionality. In versions prior to 0.9 some places render a chat channel's name and description in an unsafe way, allowing staff members to cause an cross site scripting (XSS) attack by inserting unsafe HTML into them. Version 0.9 has addressed this issue. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39279">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3f94f0cb742f63815c517e156221f92a</td>
+       <td>CVE-2022-27810</td>
+       <td>2022-10-06 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>It was possible to trigger an infinite recursion condition in the error handler when Hermes executed specific maliciously formed JavaScript. This condition was only possible to trigger in dev-mode (when asserts were enabled). This issue affects Hermes versions prior to v0.12.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27810">详情</a></td>
+      </tr>
+
+      <tr>
        <td>18800074cb6ca81682cdaeca472182e5</td>
        <td>CVE-2022-41528</td>
        <td>2022-10-06 19:15:00 <img src="imgs/new.gif" /></td>
@@ -465,62 +521,6 @@
        <td>2022-10-03 15:15:00</td>
        <td>An issue was discovered in Veritas NetBackup through 10.0.0.1 and related Veritas products. The NetBackup Primary server is vulnerable to a denial of service attack through the DiscoveryService service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42299">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5a85890dbad2c506f81eb18357ba7791</td>
-       <td>CVE-2022-40922</td>
-       <td>2022-10-03 13:15:00</td>
-       <td>A vulnerability in the LIEF::MachO::BinaryParser::init_and_parse function of LIEF v0.12.1 allows attackers to cause a denial of service (DOS) through a segmentation fault via a crafted MachO file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40922">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>73e277f65f6c4a983458b4fa3582ee88</td>
-       <td>CVE-2022-40123</td>
-       <td>2022-10-03 13:15:00</td>
-       <td>mojoPortal v2.7 was discovered to contain a path traversal vulnerability via the "f" parameter at /DesignTools/CssEditor.aspx. This vulnerability allows authenticated attackers to read arbitrary files in the system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40123">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0b5f2c5dfec3ad06a87fab46d2f82a79</td>
-       <td>CVE-2022-38817</td>
-       <td>2022-10-03 13:15:00</td>
-       <td>Dapr Dashboard v0.1.0 through v0.10.0 is vulnerable to Incorrect Access Control that allows attackers to obtain sensitive data.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38817">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2a2de6317bdd1b260a450131deadfdeb</td>
-       <td>CVE-2022-32173</td>
-       <td>2022-10-03 13:15:00</td>
-       <td>In OrchardCore rc1-11259 to v1.2.2 vulnerable to HTML injection, allow an authenticated user with an editor security role to inject a persistent HTML modal dialog component into the dashboard that will affect admin users.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-32173">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fa019be45a360c886c50653b8f4dc1f9</td>
-       <td>CVE-2022-36551</td>
-       <td>2022-10-03 12:15:00</td>
-       <td>A Server Side Request Forgery (SSRF) in the Data Import module in Heartex - Label Studio Community Edition versions 1.5.0 and earlier allows an authenticated user to access arbitrary files on the system. Furthermore, self-registration is enabled by default in these versions of Label Studio enabling a remote attacker to create a new account and then exploit the SSRF.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36551">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e92a0f540819d156a570c1170bc04445</td>
-       <td>CVE-2022-40886</td>
-       <td>2022-10-03 02:15:00</td>
-       <td>DedeCMS 5.7.98 has a file upload vulnerability in the background.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40886">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0959e2a198d8e21292c342e6ae2fab6a</td>
-       <td>CVE-2022-41082</td>
-       <td>2022-10-03 01:15:00</td>
-       <td>Microsoft Exchange Server Remote Code Execution Vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41082">详情</a></td>
       </tr>
 
      </tbody>
@@ -1742,7 +1742,7 @@
       <tr>
        <td>673ae6b45c9906c8a9d0a0ae03dd52c2</td>
        <td>CVE-2022-36448</td>
-       <td>2022-10-05 20:28:27 <img src="imgs/new.gif" /></td>
+       <td>2022-10-05 20:28:27</td>
        <td>INSYDE INSYDEH2O Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0822b957efb44d6fa72ac2d19d6586ad">详情</a></td>
       </tr>
@@ -1750,7 +1750,7 @@
       <tr>
        <td>2e174c9637c7e7c1c8086632f4df0971</td>
        <td>CVE-2022-23716</td>
-       <td>2022-10-05 20:28:18 <img src="imgs/new.gif" /></td>
+       <td>2022-10-05 20:28:18</td>
        <td>ELASTIC ELASTIC_CLOUD_ENTERPRISE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7f72db5dba7e4561ae9ec5d192b65f81">详情</a></td>
       </tr>
@@ -1758,7 +1758,7 @@
       <tr>
        <td>82a1ed167f4e2c7244e16d768ec83547</td>
        <td>CVE-2022-3215</td>
-       <td>2022-10-05 20:28:07 <img src="imgs/new.gif" /></td>
+       <td>2022-10-05 20:28:07</td>
        <td>APPLE SWIFTNIO Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c537acb66d52491c82726bf81dc0060f">详情</a></td>
       </tr>
@@ -1766,7 +1766,7 @@
       <tr>
        <td>f8cb1ea74806f384bbb5e90807b0d8d4</td>
        <td>CVE-2021-42046</td>
-       <td>2022-10-05 20:27:56 <img src="imgs/new.gif" /></td>
+       <td>2022-10-05 20:27:56</td>
        <td>MediaWiki GlobalWatchlist 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2f03a2ae66ba4526a10dc0acc750806c">详情</a></td>
       </tr>
